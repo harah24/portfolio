@@ -1,0 +1,21 @@
+@use 'variables' as*;
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-family: $primary-font;
+  font-weight: 600;
+
+}
+
+.nav-ul,a{
+    list-style: none;
+    margin-right: 0.5em;
+    text-decoration: none;
+  }
+
+.logo {
+  font-family: $secondary-font;
+}
