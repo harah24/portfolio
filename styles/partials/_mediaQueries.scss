@@ -1,0 +1,16 @@
+@use 'variables' as*;
+
+@media (min-width:700px) {
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+
+  .nav-bar{
+  min-height: 100px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+}

@@ -239,14 +239,14 @@ img {
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 100vh;
 }
 
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
-  font-size: clamp(1.2rem, -0.7143rem + 8.5714vw, 2.5rem);
+  font-size: clamp(1.5rem, -0.7143rem + 8.5714vw, 2.5rem);
 }
 
 h2 {
@@ -261,29 +261,119 @@ h3 {
   font-size: 1.25rem;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-  font-size: 1.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
+.nav-div {
+  width: 90%;
 }
-
-.nav-ul, a {
-  list-style: none;
-  margin-right: 0.5em;
+.nav-div a {
   text-decoration: none;
+  color: black;
+}
+.nav-div li {
+  list-style: none;
+  margin: 7px 0;
 }
 
-.logo {
-  font-family: "Playfair Display", serif;
+.nav-bar {
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: -20em;
+  background-color: #efe7ed;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  transition: 0.3s ease-in-out;
+  color: #eb99eb;
+}
+
+.bar {
+  background-color: black;
+  display: block;
+  width: 1.5em;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active {
+  display: block;
+}
+.hamburger.active .bar:nth-child(2) {
+  transform: translateX(6px) rotate(180deg);
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(-1px) rotate(-35deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(1px) rotate(35deg);
+}
+
+.nav-list.active {
+  left: 0;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #241921;
+  color: white;
+}
+footer p {
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .about-me {
-  background-color: #f3ece6;
+  background-color: #dfceda;
+  padding: 10px 0;
+}
+
+.about-content {
+  text-align: center;
 }
 
 .skills-section {
-  background-color: #778a67;
+  background-color: #241921;
+  color: white;
+  padding: 20px 0;
+}
+.skills-section h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.contact-me {
+  background-color: #fceef7;
+  padding: 1em 0 2em;
+}
+
+@media (min-width: 700px) {
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  .nav-bar {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

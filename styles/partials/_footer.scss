@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+footer{
+  background-color:#241921;
+  color: white;
+  p{
+    margin: 0;
+    padding: 5px 0;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

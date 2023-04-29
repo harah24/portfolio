@@ -3,20 +3,22 @@
 body{
   font-family:$primary-font ;
   font-weight:400;
-  background-color:#FFFFFF;
+  background-color:#ffffff ;
   height: 100vh;
 }
 
 h1{
   font-family: $secondary-font;
   font-weight: 500;
-  font-size: clamp(1.2rem, -0.7143rem + 8.5714vw, 2.5rem);
+  font-size: clamp(1.5rem, -0.7143rem + 8.5714vw, 2.5rem);
 }
+
 h2{
   font-family: $primary-font;
   font-weight: 600;
   font-size: 2rem;
 }
+
 h3{
   font-family: $primary-font;
   font-weight: 600;

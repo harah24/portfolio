@@ -1,10 +1,25 @@
 @use 'variables' as *;
 
 .about-me{
-  background-color:#f3ece6;
+  background-color:#dfceda;  
+  padding: 10px 0;
+}
+
+.about-content{
+  text-align: center;
 }
 
 .skills-section{
-  background-color: #778a67;
+  background-color: #241921;  
+  color: white;
+  padding: 20px 0;
+  h2{
+    margin: 0;
+    text-align: center;
+  }
+}
 
+.contact-me{
+  background-color: #fceef7;
+  padding: 1em 0 2em;
 }
