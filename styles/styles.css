@@ -239,7 +239,7 @@ img {
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: white;
   height: 100vh;
 }
 
@@ -280,6 +280,10 @@ h3 {
   align-items: center;
 }
 
+.nav-logo {
+  font-size: 1.5rem;
+}
+
 .nav-list {
   font-size: 1rem;
   display: flex;
@@ -287,7 +291,7 @@ h3 {
   align-items: center;
   position: fixed;
   top: 0px;
-  left: -20em;
+  left: -100%;
   background-color: #efe7ed;
   width: 100%;
   transition: 0.5s ease-in-out;
@@ -330,7 +334,7 @@ h3 {
 }
 
 footer {
-  background-color: #241921;
+  background-color: #316287;
   color: white;
 }
 footer p {
@@ -342,16 +346,16 @@ footer p {
 }
 
 .about-me {
-  background-color: #dfceda;
+  background-color: #E9F1F7;
   padding: 10px 0;
 }
 
-.about-content {
+.about-content h2 {
   text-align: center;
 }
 
 .skills-section {
-  background-color: #241921;
+  background-color: #316287;
   color: white;
   padding: 20px 0;
 }
@@ -359,10 +363,36 @@ footer p {
   margin: 0;
   text-align: center;
 }
+.skills-section ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.skills-section ul li {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  font-size: 0.8rem;
+  list-style: none;
+  margin: 15px 0;
+  padding: 15px 0;
+  box-shadow: 0px 4px 8px white;
+  border: 2px solid white;
+}
+.skills-section ul li i {
+  font-size: 2rem;
+}
+
+.projects h2 {
+  margin: 0;
+}
 
 .contact-me {
-  background-color: #fceef7;
+  background-color: #f2f5f8;
   padding: 1em 0 2em;
+}
+.contact-me h2 {
+  margin: 0;
 }
 
 @media (min-width: 700px) {
