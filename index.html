@@ -40,80 +40,80 @@
             <div class='wrapper'>
                 <div class="about-content">
                     <h2>about me</h2>
-                    <img src="./asset/34788.jpg" alt="">
+                    <!-- <img src="./asset/34788.jpg" alt=""> -->
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati soluta doloribus facere accusantium laborum voluptate harum itaque. Maiores nulla impedit aperiam facere dolor neque similique laudantium voluptates beatae culpa.</p>
                 </div>
             </div>
         </section>
         <section class='skills-section'>
-            <div class='wrapper'>
+            <div class='wrapper skills-content '>
                 <h2>skills</h2>
                 <ul>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-brands fa-html5"></i>
-                            <p>HTML</p>
                         </div>
+                        <p>HTML</p>
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-brands fa-css3-alt"></i>
-                            <p>CSS</p>
                         </div>
+                        <p>CSS</p>
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-brands fa-sass"></i>
-                            <p>Sass</p>
                         </div>
+                        <p>Sass</p>
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-brands fa-github"></i>
-                            <p>Git and <br>GitHub</br></p> 
                         </div>
+                        <p>Git and <br>GitHub</br></p> 
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-brands fa-square-js"></i> 
-                            <p>JavaScript</p> 
                         </div>
+                        <p>JavaScript</p> 
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-sharp fa-solid fa-universal-access"></i>
-                            <p>Accessibility</p>
                         </div>
+                        <p>Accessibility</p>
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-solid fa-user-group"></i>
-                            <p>Paired <br>Programming</br></p>
                         </div>
+                        <p>Paired <br>Programming</br></p>
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-solid fa-gears"></i>
-                            <p>REST APIs</p>
                         </div>
+                        <p>REST APIs</p>
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="devicon-firebase-plain"></i>
-                            <p>Firebase</p>
                         </div>
+                        <p>Firebase</p>
                     </li>
                     <li> 
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-brands fa-react"></i>
-                            <p>React</p>
                         </div>
+                        <p>React</p>
                     </li>
                     <li>
-                        <div>
+                        <div class='skills-icons'>
                             <i class="fa-solid fa-mobile-screen-button"></i>
-                            <p>Responsive <br>Design</br></p>
                         </div>
+                        <p>Responsive <br>Design</br></p>
                     </li>
                 </ul>
             </div>
@@ -189,33 +189,41 @@
                 </div>
             </div><!-- end of wrapper -->
         </section>
-        <section class='contact-me'>
+        <section id='contact' class='contact'>
             <div class='wrapper'>
-                <div class='contact-info'>
-                    <h2>get in touch</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <ul>
-                        <li>LinkedIn</li>
-                        <li>github</li>
-                        <li>twitter</li>
-                        <li>email</li>
-                    </ul>
+                <h2>get in touch</h2>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores,  
+                    tenetur impedit ipsum aut est hic, totam corrupti nemo modi vero,   
+                    eligendi maxime nihil distinctio? Veniam sint vitae dolores laboriosam  
+                    dicta.</p>
+                <div class='contact-links'>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin  fa-lg"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github  fa-lg"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-envelope fa-lg"></i>
+                    </a>
                 </div>
                 <div class="contact-form">
-                    <form id='my-form' action="" method='post'>
-                            <label class='sr-only' for="name">Name</label>
-                            <input id='input' class='name' type="text" name='name' placeholder='your name here' required=''>
-                            <label class='sr-only' for="email">Email Address</label>
-                            <input id='input' class='email' type="text" name='email' placeholder='your email here' required=''>
-                            <label class='sr-only' for="">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder='your message here'></textarea>
-                            <button id='form-btn' type='submit'>submit</button>
+                    <form id='site-form' action="https://formspree.io/f/xgebdaev" method='POST'>
+                        <label class='sr-only' for="name">Name</label>
+                        <input id='input' class='name' type="text" name='name' placeholder='name' required>
+                        <label class='sr-only' for="email">Email Address</label>
+                        <input id='input' class='email' type="email" name='email' placeholder='email address' required>
+                        <label class='sr-only' for="">Message</label>
+                        <textarea name="message" id="message" cols="50" rows="10" placeholder='message'></textarea>
+                        <button class='form-btn' id='form-btn' type='submit'>Submit</button>
                     </form>
                 </div>
-            </div>
+            </div><!-- end of contact wrapper -->
         </section>
     </main>
-    
     <footer>
         <div>
         <p>Created by Hara © 2023</p>
