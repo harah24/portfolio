@@ -1,8 +1,6 @@
 @use 'variables' as *;
 
-body{
-  background-color: #F1EEE4;
-}
+//ABOUT SECTION 
 
 .about-me{
   padding: 10px 0;
@@ -13,50 +11,76 @@ body{
   }
 }
 
+//SKILLS SECTION
+
 .skills-section{
   background-color: #C8BB93;  
   color: white;
-
-  form{
-    align-content: center;
-  }
-
+  display: block;
   h2{
     margin: 0;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 0;
   }
-  ul{
-    max-width: 60%;
-    display: flex;
-    flex-direction: column;
-    li{
-      list-style: none;
-      border: 2px solid white;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 15px;
-      padding: 10px;
-      .skills-icons{
-        font-size: 2.5rem;
-        text-align: center;
+  .skills-content{
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 30px;
+      li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .skills-icons{
+          font-size: 1.5rem;
+        }
       }
     }
+
   }
 }
+
+// PROJECT SECTION 
 
 .projects{
-  padding: 30px 0;
+  padding-bottom: 20px;
   h2{
-    margin: 0px;
     text-align: center;
+  }
+  .project-info{
+    text-align: center;
+
+    .technical-skills{
+      text-align: center;
+      p{
+        color:#877745;
+        font-weight: 600;
+      }
+      ul{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 20px;
+      }
+    }
+    .project-links{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+
+    }
+  }
+  .project2{
+    margin-top: 50px;
   }
 }
 
-// STYLE FORM HERE 
+// FORM SECTION 
 
 .contact{
-  border-top: 2px solid #282415;
+  border-top: 2px solid white;
 
   h2{
     margin: 0;
@@ -84,42 +108,43 @@ body{
     width: 80%;
     padding: 10px 10px;
     border-radius: 5px;
-    border-color: black;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
   }
 
   textarea{
     width: 80%;
     padding: 10px 10px;
     border-radius: 5px;
-    border-color: black;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
     resize: none;
   }
 
   input:focus-within{
-    border-color:#f3ee53;
+    border-color:#AB9A5F;
     border-width: 3px;
     outline: none;
   }
 
   textarea:focus-within{
-    border-color:#f3ee53;
+    border-color:#AB9A5F;
     border-width: 3px;
     outline: none;
   }
   .form-btn{
     background-color:#877745;
-    // border-color: 5px solid white;
+    font-size: 1rem;
     color: white;
     border-radius: 5px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    padding: 5px 10px;
+    font-size: 0.7rem;
+    padding: 0.5em 1em;
     margin-bottom: 20px;
-    align-self: center;
-   
+    display: flex;
   }
   .form-btn:hover{
     cursor: pointer;

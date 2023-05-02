@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">      
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?  
+    family=Playfair+Display:ital,wght@1,500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <title>Personal Portfolio</title>
 </head>
 <body>
-    <header class='wrapper'>
+    <header class='hero-img'>
         <div class='nav-div wrapper'>
             <nav class='nav-bar'>
             <a href="#" class='nav-logo'>hh.</a>
@@ -40,14 +41,14 @@
             <div class='wrapper'>
                 <div class="about-content">
                     <h2>about me</h2>
-                    <!-- <img src="./asset/34788.jpg" alt=""> -->
+
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati soluta doloribus facere accusantium laborum voluptate harum itaque. Maiores nulla impedit aperiam facere dolor neque similique laudantium voluptates beatae culpa.</p>
                 </div>
             </div>
         </section>
         <section class='skills-section'>
             <div class='wrapper skills-content '>
-                <h2>skills</h2>
+                <h2>technical skills</h2>
                 <ul>
                     <li>
                         <div class='skills-icons'>
@@ -119,74 +120,54 @@
             </div>
         </section>
         <section class='projects'>
-            <div class='wrapper'>
-                <div class='projectitle'>
+            <div class='wrapper'>   
                     <h2>projects</h2>
-                </div>
-                <div class='listofprojects'>
-                    <ul>
-                        <li class='project1'>
-                            <div class='project-img'>
-                                <img src="" alt="">
-                            </div>
-                            <div class='content-box'>
-                                <h3>project title</h3>
-                                <p>project description</p>
-                                <p>skills used</p>
-                                <div class='technical-skills'>
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                    </ul>
+                    <div class="project-list">
+                        <ul>
+                            <li class='project1'>
+                                <div class='project-img'>
+                                    <img src="./asset/bar-one.jpg" alt="">
                                 </div>
-                                <div class='project-links'>
-                                    <a class='live-link' href="">Live Site</a>
-                                    <a class ='git-link' href="">GitHub Repo</a>
+                                <div class='project-info'>
+                                    <h3>Bar-One</h3>
+                                    <p>A multipage restaurant website created using HTML & CSS.</p>
+                                    <div class='technical-skills'>
+                                        <p>Skills Used</p>
+                                        <ul>
+                                            <li><i class="fa-brands fa-html5 fa-xl"></i></li>
+                                            <li><i class="fa-brands fa-css3-alt fa-xl"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class='project-links'>
+                                        <a class='live-link' href="">Live Site</a>
+                                        <a class ='git-link' href="">GitHub</a>
+                                    </div>
+                                </div> <!-- end of project info div -->
+                            </li>
+                            <li class='project2'>
+                                <div class='project-img'>
+                                    <img src="./asset/thecocktaillibrary.png" alt="">
                                 </div>
-                            </div> <!-- end of content -->
-                        </li>
-                        <li class='project2'>
-                            <div class='project-img'>
-                                <img src="" alt="">
-                            </div>
-                            <div class='content-box'>
-                                <h3>project title</h3>
-                                <p>project description</p>
-                                <p>skills used</p>
-                                <div class='technical-skills'>
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                    </ul>
-                                </div>
-                                <div class='project-links'>
-                                    <a class='live-link' href="">Live Site</a>
-                                    <a class ='git-link' href="">GitHub Repo</a>
-                                </div>
-                            </div> <!-- end of content -->
-                        </li>
-                        <li class='project3'>
-                            <div class='project-img'>
-                                <img src="" alt="">
-                            </div>
-                            <div class='content-box'>
-                                <h3>project title</h3>
-                                <p>project description</p>
-                                <p>skills used</p>
-                                <div class='technical-skills'>
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                    </ul>
-                                </div>
-                                <div class='project-links'>
-                                    <a class='live-link' href="">Live Site</a>
-                                    <a class ='git-link' href="">GitHub Repo</a>
-                                </div>
-                            </div> <!-- end of content -->
-                        </li>
-                    </ul>
-                </div>
+                                <div class='project-info'>
+                                    <h3>The Cocktail Library</h3>
+                                    <p>A website that helps you find a cocktail recipe utilizing thecocktailDB API. Completed this 
+                                        project at Juno College with my partner Jonathan. </p>
+                                    <div class='technical-skills'>
+                                        <p>Skills Used</p>
+                                        <ul>
+                                            <li><i class="fa-brands fa-html5 fa-xl"></i></li>
+                                            <li><i class="fa-brands fa-css3-alt fa-xl"></i></li>
+                                            <li><i class="fa-solid fa-gears fa-xl"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class='project-links'>
+                                        <a class='live-link' href="">Live Site</a>
+                                        <a class ='git-link' href="">GitHub</a>
+                                    </div>
+                                </div> <!-- end of project info div -->
+                            </li>
+                        </ul>
+                    </div>
             </div><!-- end of wrapper -->
         </section>
         <section id='contact' class='contact'>
