@@ -415,7 +415,7 @@ footer p {
 }
 
 .contact {
-  border-top: 2px solid white;
+  border-top: 3px solid white;
 }
 .contact h2 {
   margin: 0;
@@ -424,13 +424,25 @@ footer p {
 }
 .contact .contact-links {
   margin: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 .contact .contact-links a {
   color: #877745;
   margin-right: 10px;
+  margin-left: 15px;
+  display: block;
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form #site-form {
+  display: flex;
+  flex-direction: column;
 }
 .contact input {
-  width: 80%;
+  width: 100%;
   padding: 10px 10px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -438,7 +450,7 @@ footer p {
   font-size: 0.7rem;
 }
 .contact textarea {
-  width: 80%;
+  width: 100%;
   padding: 10px 10px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -460,11 +472,10 @@ footer p {
   background-color: #877745;
   color: white;
   border-radius: 5px;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 20px;
   padding: 10px 20px;
-  width: 210px;
 }
 .contact .form-btn:hover {
   cursor: pointer;

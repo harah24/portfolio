@@ -84,7 +84,7 @@
 // FORM SECTION 
 
 .contact{
-  border-top: 2px solid white;
+  border-top: 3px solid white;
   h2{
     margin: 0;
     text-align: center;
@@ -93,24 +93,27 @@
 
   .contact-links{
     margin: 20px 0;
-    a{
+    display: flex;
+    justify-content: center;
+    a {
       color:#877745;
       margin-right: 10px;
+      margin-left: 15px;
+      display: block;
     }
   }
 
   .contact-form{
-    // display: flex;
-
-
+    display: flex;
+    flex-direction: column;
     #site-form{
-      // display: flex;
-      // flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
   }
 
   input{
-    width: 80%;
+    width: 100%;
     padding: 10px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -119,7 +122,7 @@
   }
 
   textarea{
-    width: 80%;
+    width: 100%;
     padding: 10px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -143,12 +146,10 @@
     background-color:#877745;
     color: white;
     border-radius: 5px;
-    text-align: center;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 20px;
     padding: 10px 20px;
-    width: 210px;
-    // display: flex;
   }
   .form-btn:hover{
     cursor: pointer;
