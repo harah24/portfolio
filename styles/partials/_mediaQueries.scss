@@ -1,15 +1,38 @@
 @use 'variables' as*;
 
-@media (min-width:600px) and (max-width:1260px) {
-  
-  .nav-bar{
-    
-  .hamburger{
+@media only screen and (min-width:900px) {
+  .nav-toggle{
     display: none;
-  
   }
 
-}
+  .nav-header{
+    display: block;
+  }
 
+  .flex-nav{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .nav-links{
+    height: auto;
+  }
+
+  ul{
+    text-align: center;
+  }
+
+  .nav-link{
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  .nav-link span{
+    background-color:#A08F54;
+    padding: 8px 15px;
+    border-radius: 4px;
+  }
 
 }
