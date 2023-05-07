@@ -1,38 +1,68 @@
 @use 'variables' as*;
+// *{
+//   border: 2px solid red;
+// }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:1024px ) {
+  //NAV STYLING
+
   .nav-toggle{
     display: none;
   }
-
   .nav-header{
     display: block;
   }
-
   .flex-nav{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 2.5em;
   }
-
   .nav-links{
     height: auto;
+    li {
+      margin-right:2.5em;
+    }
   }
-
   ul{
     text-align: center;
+    justify-content: space-between;
   }
-
   .nav-link{
     display: inline-block;
     border-bottom: none;
   }
-
   .nav-link span{
     background-color:#A08F54;
     padding: 8px 15px;
     border-radius: 4px;
   }
 
+  // PROJECT STYLING 
+
+  .project1, .project2, .project3{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-img{
+    width: 40%;
+    margin-bottom: 2em;
+  }
+
+  .project-info{
+    width: 50%;
+    h3{
+      padding: 0;
+      margin: 0;
+
+    }
+  }
+
+//CONTACT STYLING
+
+.contact-info{
+  width: 70%;
+}
 }
