@@ -1,10 +1,6 @@
 @use 'variables' as *;
 
-// *{
-//   border: 2px red solid;
-// }
-
-//ABOUT SECTION 
+//About section 
 
 .about{
   margin: 3.125em 0;
@@ -16,7 +12,7 @@
   }
 }
 
-//SKILLS SECTION
+//Skills section 
 
 .skills-section {
   background-color:#282415;  
@@ -25,25 +21,29 @@
   .skills-content{ 
     h2{
       text-align: center;
-      padding-bottom: 1.25em;
+      margin-bottom: 2em;
     }
+
     ul {
-      display:flex;
-      flex-wrap:wrap;
-      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+      grid-gap: 1rem;
+      margin-bottom: 1.5em;
+   
       li {
         width: 50%;
-        margin: 1.25em 0;
+        justify-self: center;
         i {
           font-size: 1.5rem;
           margin-bottom: 0.5em;
+         
         }
       }
     }
   }
 }
 
-// PROJECT SECTION 
+// Project section
 
 .projects{
   padding-top: 3.125em;
@@ -63,7 +63,7 @@
   }
 
   .project-info{
-    margin: 1.25em;
+    margin: 0 1.25em;
     .technical-skills{
       text-align: center;
       margin-bottom: 1.25em;
@@ -83,14 +83,20 @@
 
 }
 
-// FORM SECTION 
+//Contact section
 
 .contact{
   border-top: 2px solid #282415;
   padding: 3.125em 0;
   h2{
     text-align: center;
+    margin-bottom: 1.125em;
   }
+
+  .contact-info{
+    margin-bottom: 1.125em;
+  }
+
   .contact-links{
     margin: 1.25em 0;
     display: flex;
@@ -115,16 +121,14 @@
     padding: 10px;
     border-radius: 5px;
     margin-bottom:1.25em;
-    text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   textarea{
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     margin-bottom:1.25em;
-    text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size:1rem;
     resize: none;
   }
   input:focus-within{
@@ -142,7 +146,7 @@
     color: #282415;
     border-radius:5px;
     font-weight: 600;
-    text-transform: uppercase;
+    font-size: 1rem;
     text-align: center;
     padding: 0.625em 1.25em;
     margin-top: 0.5em;

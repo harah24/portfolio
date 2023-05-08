@@ -321,17 +321,23 @@ h3 {
   background: transparent;
   color: black;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .nav-links {
   height: 0;
   overflow: hidden;
-  background-color: #BFB1A1;
+  background-color: #AA9E88;
   text-align: center;
 }
 
 .nav-open {
   height: 25vh;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 65px;
+  left: 0;
 }
 
 .header-content {
@@ -369,16 +375,17 @@ footer p {
 }
 .skills-section .skills-content h2 {
   text-align: center;
-  padding-bottom: 1.25em;
+  margin-bottom: 2em;
 }
 .skills-section .skills-content ul {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-gap: 1rem;
+  margin-bottom: 1.5em;
 }
 .skills-section .skills-content ul li {
   width: 50%;
-  margin: 1.25em 0;
+  justify-self: center;
 }
 .skills-section .skills-content ul li i {
   font-size: 1.5rem;
@@ -401,7 +408,7 @@ footer p {
   margin: 1.25em;
 }
 .projects .project-info {
-  margin: 1.25em;
+  margin: 0 1.25em;
 }
 .projects .project-info .technical-skills {
   text-align: center;
@@ -425,6 +432,10 @@ footer p {
 }
 .contact h2 {
   text-align: center;
+  margin-bottom: 1.125em;
+}
+.contact .contact-info {
+  margin-bottom: 1.125em;
 }
 .contact .contact-links {
   margin: 1.25em 0;
@@ -450,16 +461,14 @@ footer p {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 1.25em;
-  text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 .contact textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 1.25em;
-  text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 1rem;
   resize: none;
 }
 .contact input:focus-within {
@@ -477,7 +486,7 @@ footer p {
   color: #282415;
   border-radius: 5px;
   font-weight: 600;
-  text-transform: uppercase;
+  font-size: 1rem;
   text-align: center;
   padding: 0.625em 1.25em;
   margin-top: 0.5em;
@@ -487,7 +496,41 @@ footer p {
   opacity: 60%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 640px) {
+  .about-content {
+    width: 70%;
+  }
+  .project1, .project2 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+    justify-content: space-between;
+  }
+  .project3 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  .project-img {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+  .project-info {
+    margin: 0;
+    width: 80%;
+    margin-left: 125px;
+  }
+  .contact-info {
+    width: 70%;
+  }
+  .contact-info h2 {
+    margin-bottom: 1.125em;
+  }
+}
+@media (min-width: 1024px) {
   .nav-toggle {
     display: none;
   }
@@ -502,13 +545,16 @@ footer p {
   }
   .nav-links {
     height: auto;
+    background-color: transparent;
   }
   .nav-links li {
-    margin-right: 2.5em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
   }
   ul {
     text-align: center;
     justify-content: space-between;
+    text-decoration: none;
   }
   .nav-link {
     display: inline-block;
@@ -519,23 +565,36 @@ footer p {
     padding: 8px 15px;
     border-radius: 4px;
   }
-  .project1, .project2, .project3 {
+  .about-content {
+    width: 70%;
+  }
+  .project1, .project2 {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-bottom: 2em;
+    justify-content: space-between;
   }
-  .project-img {
-    width: 40%;
+  .project3 {
+    display: flex;
+    margin: 0;
+    padding: 0;
     margin-bottom: 2em;
   }
-  .project-info {
-    width: 50%;
+  .project-img {
+    width: 60%;
+    display: flex;
+    align-items: center;
   }
-  .project-info h3 {
-    padding: 0;
+  .project-info {
     margin: 0;
+    width: 80%;
+    margin-left: 125px;
   }
   .contact-info {
     width: 70%;
+  }
+  .contact-info h2 {
+    margin-bottom: 1.125em;
   }
 }
