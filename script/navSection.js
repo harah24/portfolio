@@ -5,18 +5,20 @@
 const navToggle = document.querySelector("#nav-toggle");
 const nav = document.querySelector("#nav-links");
 
+
 //add event listener to target the hamburger menu
 
 navToggle.addEventListener("click", () => {
   nav.classList.toggle("nav-open");
 });
 
+// add add event listener to close the nav once a selection has been made 
 
-// Contact(form)section 
-// form reset code from formspree.io
+document.querySelectorAll("#nav-link").forEach(i => i.addEventListener('click', () => {
+  navToggle.classList.toggle("nav-close");
 
-window.onbeforeunload = () => {
-  for (const form of document.getElementsByTagName("form")) {
-    form.reset();
-  }
-};
+}))
+
+
+
+

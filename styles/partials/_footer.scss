@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 footer{
-  background-color:#282415;  
+  background-color:$eerie-black-clr;  
   color:$white-clr;
   
   p{
@@ -12,3 +12,4 @@ footer{
     text-align: center;
   }
 }
+
