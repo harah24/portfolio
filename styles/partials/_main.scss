@@ -15,17 +15,17 @@
 //Skills section 
 
 .skills-section {
-  background-color:#282415;  
-  color:#F1EEE4;
-  margin: 0;
-  padding: 3.125em 0;
+  background-color:$eerie-black-clr;  
+  color:$white-clr;
+  margin:0;
+  padding:3.125em 0;
   .skills-content{ 
     h2{
-      text-align: center;
-      margin-bottom: 2em;
+      text-align:center;
+      margin-bottom:2em;
     }
     ul{
-      display: grid;
+      display:grid;
       grid-template-columns:repeat(auto-fit, minmax(95px, auto));
       grid-gap:1.5em;
       li{
@@ -47,7 +47,7 @@
   padding-top: 3.125em;
   padding-bottom: 1.125em;
   a{
-    color: black;
+    color:$black-clr;
   }
   h2{
     margin-bottom: 1.25em;
@@ -58,7 +58,7 @@
       text-align: center;
       margin:1.25em;
     }
-    p {
+    p{
       margin-bottom: 1.25em;
     }
   }
@@ -72,42 +72,59 @@
         justify-content: center;
         gap:1.5em;
       }
-
     }
     .project-links{
       display: flex;
       justify-content: center;
       gap:1.25em;
       margin-bottom:2em;
+      a{
+        text-decoration: none;
+        cursor: pointer;
+      }
+      a:hover{
+        border: 2px solid $ecru-clr;
+      }
+      a:focus-visible{
+        border: 2px solid $ecru-clr;
+      }
     }
   }
-
 }
 
-//Contact section
+// Contact(form) section
 
 .contact{
-  border-top: 2px solid #282415;
+  border-top: 2px solid $eerie-black-clr;
   padding: 3.125em 0;
   h2{
     text-align: center;
     margin-bottom: 1.125em;
   }
-
   .contact-info{
     margin-bottom: 1.125em;
     text-align: center;
+    p{
+      margin-bottom:0.5em;
+      font-size: clamp(1rem, 0.9149rem + 0.4255vw, 1.25rem);
+    }
   }
-
   .contact-links{
     margin: 1.25em 0;
     display: flex;
     justify-content: center;
-    a {
-      color:#877745;
+    a{
+      cursor: pointer;
+      color:$ecru-clr;
       margin-right: 10px;
       margin-left:0.9375em;
       display: block;
+    }
+    a:focus-visible{
+      border: 2px solid $eerie-black-clr;
+    }
+    a:hover{
+      border: 2px solid $eerie-black-clr;
     }
   }
   .contact-form{
@@ -134,18 +151,18 @@
     resize: none;
   }
   input:focus-within{
-    border-color:#AB9A5F;
+    border-color:$eerie-black-clr;
     border-width: 3px;
     outline: none;
   }
   textarea:focus-within{
-    border-color:#AB9A5F;
+    border-color:$eerie-black-clr;
     border-width: 3px;
     outline: none;
   }
   .form-btn{
-    background-color:#877745;
-    color: #282415;
+    background-color:$ecru-clr;
+    color:$eerie-black-clr;
     border-radius:5px;
     font-weight: 600;
     font-size: 1rem;
@@ -157,4 +174,9 @@
     cursor: pointer;
     opacity: 60%;
   }
+  .form-btn:focus-visible{
+    border: 2px solid $eerie-black-clr;
+  }
 }
+
+

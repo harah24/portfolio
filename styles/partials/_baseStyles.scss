@@ -1,21 +1,21 @@
 @use 'variables' as *;
 
 *{
-    // box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
+html{
     font-size: 125%;
+    box-sizing: border-box;
 }
 
-img {
+img{
     max-width: 100%;
     display: block;
 }
 
-.wrapper {
+.wrapper{
     max-width: 1260px;
     width: 90%;
     margin: 0 auto;

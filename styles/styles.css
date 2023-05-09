@@ -226,6 +226,7 @@ html {
 
 html {
   font-size: 125%;
+  box-sizing: border-box;
 }
 
 img {
@@ -280,24 +281,30 @@ h3 {
   height: 70%;
 }
 
-.navbar {
+.nav-bar {
   width: 100%;
 }
-.navbar .container {
+.nav-bar .container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 1.25em 2.5em;
 }
 
 .nav-link {
   list-style: none;
-  margin: 20px 0;
+  margin: 1.25em 0;
 }
 .nav-link a {
-  color: black;
+  color: #000000;
   text-decoration: none;
   font-weight: 600;
   font-size: clamp(0.9rem, 0.83rem + 0.27vw, 1rem);
+}
+.nav-link a:hover {
+  background-color: #F1EEE4;
+}
+.nav-link a:focus {
+  border: 2px solid #F1EEE4;
 }
 
 .flex-nav {
@@ -311,7 +318,7 @@ h3 {
   align-items: center;
 }
 .nav-header a {
-  color: black;
+  color: #000000;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -319,9 +326,17 @@ h3 {
 .nav-toggle {
   border: transparent;
   background: transparent;
-  color: black;
+  color: #000000;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.nav-toggle:focus-visible {
+  border: 2px solid #282415;
+}
+
+.nav-toggle:hover {
+  background-color: #AB9F5F;
 }
 
 .nav-links {
@@ -336,7 +351,7 @@ h3 {
   z-index: 10;
   position: fixed;
   width: 100%;
-  top: 65px;
+  top: 4.0625em;
   left: 0;
 }
 
@@ -350,13 +365,13 @@ h3 {
 
 footer {
   background-color: #282415;
-  color: #F5F5F5;
+  color: #F1EEE4;
 }
 footer p {
   margin: 0;
-  padding: 10px 0;
+  padding: 15px 0;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -398,7 +413,7 @@ footer p {
   padding-bottom: 1.125em;
 }
 .projects a {
-  color: black;
+  color: #000000;
 }
 .projects h2 {
   margin-bottom: 1.25em;
@@ -429,6 +444,16 @@ footer p {
   gap: 1.25em;
   margin-bottom: 2em;
 }
+.projects .project-info .project-links a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.projects .project-info .project-links a:hover {
+  border: 2px solid #AB9F5F;
+}
+.projects .project-info .project-links a:focus-visible {
+  border: 2px solid #AB9F5F;
+}
 
 .contact {
   border-top: 2px solid #282415;
@@ -442,16 +467,27 @@ footer p {
   margin-bottom: 1.125em;
   text-align: center;
 }
+.contact .contact-info p {
+  margin-bottom: 0.5em;
+  font-size: clamp(1rem, 0.9149rem + 0.4255vw, 1.25rem);
+}
 .contact .contact-links {
   margin: 1.25em 0;
   display: flex;
   justify-content: center;
 }
 .contact .contact-links a {
-  color: #877745;
+  cursor: pointer;
+  color: #AB9F5F;
   margin-right: 10px;
   margin-left: 0.9375em;
   display: block;
+}
+.contact .contact-links a:focus-visible {
+  border: 2px solid #282415;
+}
+.contact .contact-links a:hover {
+  border: 2px solid #282415;
 }
 .contact .contact-form {
   display: flex;
@@ -477,17 +513,17 @@ footer p {
   resize: none;
 }
 .contact input:focus-within {
-  border-color: #AB9A5F;
+  border-color: #282415;
   border-width: 3px;
   outline: none;
 }
 .contact textarea:focus-within {
-  border-color: #AB9A5F;
+  border-color: #282415;
   border-width: 3px;
   outline: none;
 }
 .contact .form-btn {
-  background-color: #877745;
+  background-color: #AB9F5F;
   color: #282415;
   border-radius: 5px;
   font-weight: 600;
@@ -499,6 +535,9 @@ footer p {
 .contact .form-btn:hover {
   cursor: pointer;
   opacity: 60%;
+}
+.contact .form-btn:focus-visible {
+  border: 2px solid #282415;
 }
 
 @media (min-width: 640px) {

@@ -15,14 +15,14 @@
 </head>
 <body>
     <header class='hero-img'>
-        <div class="navbar">
-            <div class="container flex-nav">
-                <div class="nav-header">
+        <div class='nav-bar'>
+            <div class='container flex-nav'>
+                <div class='nav-header'>
                     <a>hh.</a>
-                    <button class="nav-toggle" id='navToggle'>
+                    <button class='nav-toggle' id='nav-toggle'>
                         <i class='fas fa-bars'></i>
                     </button>   
-                </div> 
+                </div> <!-- end of nav-header -->
                 <nav class='nav-links' id='nav-links'>
                     <ul>
                         <li class="nav-link"><a href="#home">home</a></li>
@@ -31,12 +31,12 @@
                         <li class="nav-link"><a href="#contact"><span>contact</span></a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
+            </div> <!-- end of nav-links -->
+        </div> <!-- end of nav-bar -->
         <div class='wrapper header-content'>
             <h1>hara hordofa</h1>
             <p>toronto based front-end developer</p>
-        </div><!-- end of header-content -->
+        </div> <!-- end of header-content -->
     </header>
     <main>
         <section id='about' class='about'>
@@ -56,51 +56,51 @@
                 <h2>technical skills</h2>
                 <ul>
                     <li>
-                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-html5" alt='HTML icon'></i>
                         <p>HTML</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-css3-alt" alt='CSS icon'></i>
                         <p>CSS</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-sass"></i>
+                        <i class="fa-brands fa-sass" alt='Sass icon'></i>
                         <p>Sass</p>
                     </li>
                     <li>
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-github" alt='Git icon'></i>
                         <p>Git</p> 
                     </li>
                     <li>
-                        <i class="fa-brands fa-square-js"></i> 
+                        <i class="fa-brands fa-square-js" alt='JavaScript icon'></i> 
                         <p>JavaScript</p> 
                     </li>
                     <li>
-                        <i class="fa-sharp fa-solid fa-universal-access"></i>
+                        <i class="fa-sharp fa-solid fa-universal-access" alt='Accessibility icon'></i>
                         <p>Accessibility</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-user-group"></i>
+                        <i class="fa-solid fa-user-group" alt='Paired Programming icon'></i>
                         <p>Paired <br>Programming</br></p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-gears"></i>
+                        <i class="fa-solid fa-gears" alt='Rest APIs icon'></i>
                         <p>REST APIs</p>
                     </li>
                     <li>
-                        <i class="devicon-firebase-plain"></i>
+                        <i class="devicon-firebase-plain" alt='Firebase icon'></i>
                         <p>Firebase</p>
                     </li>
                     <li> 
-                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-react" alt='React icon'></i>
                         <p>React</p>
                     </li>
                     <li>
-                        <i class="fa-solid fa-laptop-file "></i>
+                        <i class="fa-solid fa-mobile-screen-button" alt='Responsive Design'></i>
                         <p>Responsive Design</p>
                     </li>
                     <li> 
-                        <i class="fa-solid fa-terminal"></i>
+                        <i class="fa-solid fa-terminal" alt='terminal icon'></i>
                         <p>Terminal</p>
                     </li>
                 </ul>
@@ -113,7 +113,8 @@
                         <ul>
                             <li class='project1'>
                                 <div class='project-img'>
-                                    <img src="./asset/left-image.jpg" alt="">
+                                    <img src="./asset/left-image.jpg" alt="Restaurant bar counter with hanging lights, exposed shelves of 
+                                    alcohol, drinking glasses and flowers on the bar top.">
                                 </div>
                                 <div class='project-info'>
                                     <h3>Bar-One</h3>
@@ -121,20 +122,21 @@
                                         College.</p>
                                     <div class='technical-skills'>
                                         <ul>
-                                            <li><i class="fa-brands fa-html5 fa-xl"></i></li>
-                                            <li><i class="fa-brands fa-css3-alt fa-xl"></i></li>
-                                            <li><i class="fa-brands fa-square-js fa-xl"></i></li>
+                                            <li><i class="fa-brands fa-html5 fa-xl" alt='HTML icon'></i></li>
+                                            <li><i class="fa-brands fa-css3-alt fa-xl" alt='CSS icon'></i></li>
+                                            <li><i class="fa-brands fa-square-js fa-xl" alt='JavaScript icon'></i></li>
                                         </ul>
                                     </div>
                                     <div class='project-links'>
-                                        <a class='live-link' href="">Live Site</a>
-                                        <a class ='git-link' href="">GitHub</a>
-                                    </div>
+                                        <a class='live-link' href="https://bar-one-project-one.netlify.app/">Live Site</a>
+                                        <a class ='git-link' href="https://github.com/harah24/hara-hordofa-project-one">GitHub</a>
+                                    </div> <!-- end of project-links div -->
                                 </div> <!-- end of project info div -->
                             </li>
                             <li class='project2'>
                                 <div class='project-img'>
-                                    <img src="./asset/pexels-karolina-grabowska-4021976.jpg" alt="">
+                                    <img src="./asset/pexels-karolina-grabowska-4021976.jpg" alt="A cocktail drink in a clear glass with 
+                                    lemon slices & mints">
                                 </div>
                                 <div class='project-info'>
                                     <h3>The Cocktail Library</h3>
@@ -143,38 +145,37 @@
                                         programming & TheCocktailDB API; along with JS, CSS & HTML.</p>
                                     <div class='technical-skills'>
                                         <ul>
-                                            <li><i class="fa-brands fa-html5 fa-xl"></i></li>
-                                            <li><i class="fa-brands fa-css3-alt fa-xl"></i></li>
-                                            <li><i class="fa-brands fa-square-js fa-xl"></i></li>
-                                            <li><i class="fa-solid fa-gears fa-xl"></i></li>
-                                            <li><i class="fa-solid fa-user-group"></i></li>
+                                            <li><i class="fa-brands fa-html5 fa-xl" alt='HTML icon'></i></li>
+                                            <li><i class="fa-brands fa-css3-alt fa-xl" alt='CSS icon'></i></li>
+                                            <li><i class="fa-brands fa-square-js fa-xl" alt='JavaScript icon'></i></li>
+                                            <li><i class="fa-solid fa-gears fa-xl" alt='Rest API icon'></i></li>
+                                            <li><i class="fa-solid fa-user-group" alt='Paired Programming icon'></i></li>
                                         </ul>
                                     </div>
                                     <div class='project-links'>
-                                        <a class='live-link' href="">Live Site</a>
-                                        <a class ='git-link' href="">GitHub</a>
+                                        <a class='live-link' href="https://thecocktail-library.netlify.app">Live Site</a>
+                                        <a class ='git-link' href="https://github.com/settings/organizations">GitHub</a>
                                     </div>
                                 </div> <!-- end of project info div -->
                             </li>
                             <li class='project3'>
                                 <div class='project-img'>
-                                    <img src="./asset/image-1.jpg" alt="">
+                                    <img src="./asset/image-1.jpg" alt="A tiger sitting in a forest">
                                 </div>
                                 <div class='project-info'>
                                     <h3>Project 3</h3>
                                     <div class='technical-skills'>
                                         <p> Coming soon ...</p>
                                         <ul >
-                                            <li><i class="fa-brands fa-html5 fa-xl"></i></li>
-                                            <li><i class="fa-brands fa-css3-alt fa-xl"></i></li>
-                                            <li><i class="fa-brands fa-square-js fa-xl"></i></li>
-                                            <li><i class="fa-brands fa-react fa-xl"></i></li>
+                                            <li><i class="fa-brands fa-html5 fa-xl" alt='HTML icon'></i></li>
+                                            <li><i class="fa-brands fa-css3-alt fa-xl" alt='Css icon'></i></li>
+                                            <li><i class="fa-brands fa-square-js fa-xl" alt='JavaScript icon'></i></li>
+                                            <li><i class="fa-brands fa-react fa-xl" alt='React icon'></i></li>
                                         </ul>
-
-                                    </div>
+                                    </div> <!-- end of technical skills div -->
                                     <div class='project-links'>
-                                        <a class='live-link' href="">Live Site</a>
-                                        <a class ='git-link' href="">GitHub</a>
+                                        <a class='live-link' href="#">Live Site</a>
+                                        <a class ='git-link' href="#">GitHub</a>
                                     </div>
                                 </div> <!-- end of project info div -->
                             </li>
@@ -185,33 +186,34 @@
         <section id='contact' class='contact'>
             <div class='wrapper contact-info'>
                 <h2>get in touch</h2>
-                <p> Want to work together? Please feel free to contact me below.</p>
+                <p> Want to work together?</p>
+                <p>Please feel free to contact me using the form below.</p>
                 <div class='contact-links'>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/harahordofa/">
                         <i class="fa-brands fa-linkedin  fa-lg"></i>
                     </a>
-                    <a href="">
+                    <a href="https://github.com/harah24">
                         <i class="fa-brands fa-github  fa-lg"></i>
                     </a>
-                    <a href="">
-                        <i class="fa-brands fa-twitter fa-lg"></i>
+                    <a href="https://calendly.com/harahordofa">
+                        <i class="fa-regular fa-calendar-days"></i>
                     </a>
-                    <a href="">
+                    <a href="mailto:harahordofa@gmail.com">
                         <i class="fa-solid fa-envelope fa-lg"></i>
                     </a>
-                </div>
-                <div class="contact-form">
+                </div> <!-- end of contact-links div -->
+                <div class='contact-form'>
                     <form id='site-form' action="https://formspree.io/f/xgebdaev" method='POST'>
                         <label class='sr-only' for="name">name</label>
                         <input id='input' class='name' type="text" name='name' placeholder='name' required>
                         <label class='sr-only' for="email">email Address</label>
                         <input id='input' class='email' type="email" name='email' placeholder='email address' required>
                         <label class='sr-only' for="">message</label>
-                        <textarea name="message" id="message" cols="50" rows="10" placeholder='message'></textarea>
+                        <textarea name='message' id='message' cols='50' rows='10' placeholder='message'></textarea>
                         <button class='form-btn' id='form-btn' type='submit'>submit</button>
                     </form>
-                </div>
-            </div><!-- end of contact wrapper -->
+                </div> <!-- end of contact-form div -->
+            </div> <!-- end of contact wrapper -->
         </section>
     </main>
     <footer>

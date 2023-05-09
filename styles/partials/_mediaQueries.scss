@@ -39,12 +39,12 @@
 
  //CONTACT STYLING
 
-.contact-info{
-  width: 70%;
-  h2{
-    margin-bottom: 1.125em;
+  .contact-info{
+    width: 70%;
+    h2{
+      margin-bottom: 1.125em;
+    }
   }
-}
 }
 
 
@@ -81,6 +81,7 @@
     display: inline-block;
     border-bottom: none;
   }
+  
   .nav-link span{
     background-color:#A08F54;
     padding: 8px 15px;
@@ -92,13 +93,6 @@
  .about-content{
   width: 70%;
  }
-
-//  // Skills section
-//   .skills-content{
-//   ul{
-//     grid-template-columns: repeat(3,1fr);
-//   }
-//  }
 
   // PROJECT STYLING 
 
@@ -131,11 +125,12 @@
 
 //CONTACT STYLING
 
-.contact-info{
-  width: 70%;
-  h2{
-    margin-bottom: 1.125em;
+  .contact-info{
+    width: 70%;
+    h2{
+      margin-bottom: 1.125em;
+    }
   }
 }
 
-}
+
