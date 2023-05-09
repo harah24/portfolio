@@ -371,6 +371,7 @@ footer p {
 .skills-section {
   background-color: #282415;
   color: #F1EEE4;
+  margin: 0;
   padding: 3.125em 0;
 }
 .skills-section .skills-content h2 {
@@ -379,17 +380,17 @@ footer p {
 }
 .skills-section .skills-content ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-  grid-gap: 1rem;
-  margin-bottom: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(95px, auto));
+  grid-gap: 1.5em;
 }
 .skills-section .skills-content ul li {
-  width: 50%;
+  width: 75%;
   justify-self: center;
+  align-self: center;
 }
 .skills-section .skills-content ul li i {
   font-size: 1.5rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 .projects {
@@ -403,9 +404,12 @@ footer p {
   margin-bottom: 1.25em;
   text-align: center;
 }
-.projects .project-list h3, .projects .project-list p {
+.projects .project-list h3 {
   text-align: center;
   margin: 1.25em;
+}
+.projects .project-list p {
+  margin-bottom: 1.25em;
 }
 .projects .project-info {
   margin: 0 1.25em;
@@ -417,7 +421,7 @@ footer p {
 .projects .project-info .technical-skills ul {
   display: flex;
   justify-content: center;
-  gap: 1.875em;
+  gap: 1.5em;
 }
 .projects .project-info .project-links {
   display: flex;
@@ -436,6 +440,7 @@ footer p {
 }
 .contact .contact-info {
   margin-bottom: 1.125em;
+  text-align: center;
 }
 .contact .contact-links {
   margin: 1.25em 0;

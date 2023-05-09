@@ -17,26 +17,24 @@
 .skills-section {
   background-color:#282415;  
   color:#F1EEE4;
+  margin: 0;
   padding: 3.125em 0;
   .skills-content{ 
     h2{
       text-align: center;
       margin-bottom: 2em;
     }
-
-    ul {
+    ul{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-      grid-gap: 1rem;
-      margin-bottom: 1.5em;
-   
-      li {
-        width: 50%;
-        justify-self: center;
-        i {
-          font-size: 1.5rem;
-          margin-bottom: 0.5em;
-         
+      grid-template-columns:repeat(auto-fit, minmax(95px, auto));
+      grid-gap:1.5em;
+      li{
+        width:75%;
+        justify-self:center;
+        align-self:center;
+        i{
+          font-size:1.5rem;
+          margin-bottom: 0.25em;
         }
       }
     }
@@ -56,12 +54,14 @@
     text-align: center;
   }
   .project-list{
-    h3, p{
+    h3{
       text-align: center;
       margin:1.25em;
     }
+    p {
+      margin-bottom: 1.25em;
+    }
   }
-
   .project-info{
     margin: 0 1.25em;
     .technical-skills{
@@ -70,8 +70,9 @@
       ul{
         display: flex;
         justify-content: center;
-        gap:1.875em;
+        gap:1.5em;
       }
+
     }
     .project-links{
       display: flex;
@@ -95,6 +96,7 @@
 
   .contact-info{
     margin-bottom: 1.125em;
+    text-align: center;
   }
 
   .contact-links{
