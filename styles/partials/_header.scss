@@ -25,10 +25,10 @@
     text-decoration: none;
     font-weight: 600;
     font-size: clamp(0.9rem, 0.83rem + 0.27vw, 1rem);
+    cursor: pointer;
   }
   a:hover{
-    cursor: pointer;
-    opacity: 60%;
+    border-bottom: 2px solid $eerie-black-clr;
   }
 }
 
@@ -41,27 +41,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  a{
-    color:$black-clr;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
 }
 
 .nav-toggle{
   border: transparent;
   background: transparent;
   color:$black-clr;
-  font-size: 1.5rem;
   cursor: pointer;
+  font-size: clamp(1.5rem, 0.6017rem + 1.9915vw, 1.875rem); 
 }
 
 .nav-toggle:focus-visible{
-  border: 2px solid $eerie-black-clr;
+  background-color: $ecru-clr;
 }
 
 .nav-toggle:hover{
-  border: 2px solid $eerie-black-clr;
+  transform: rotate(180deg) scale(1);
 }
 
 .nav-links {
@@ -72,7 +67,7 @@
 }
 
 .nav-open{
-  height: 25vh;
+  height: 26vh;
   z-index: 10;
   position:absolute;
   width: 100%;

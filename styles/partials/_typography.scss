@@ -8,7 +8,7 @@ body{
   height: 100vh;
 }
 
-h1{
+h1, .logo{
   font-family: $secondary-font;
   font-weight: 600;
   font-size: clamp(1.25rem, 0.6543rem + 2.9787vw, 3rem);
@@ -26,3 +26,4 @@ h3{
   font-size: 1.25rem;
   font-size: clamp(1rem, 0.9149rem + 0.4255vw, 1.25rem);
 }
+

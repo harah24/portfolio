@@ -254,7 +254,7 @@ body {
   height: 100vh;
 }
 
-h1 {
+h1, .logo {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: clamp(1.25rem, 0.6543rem + 2.9787vw, 3rem);
@@ -411,7 +411,7 @@ footer p {
   cursor: pointer;
 }
 .projects .project-info .project-links a:hover {
-  border-bottom: 2px solid #AB9F5F;
+  border-bottom: 2px solid #282415;
 }
 .projects .project-info .project-links a:focus-visible {
   border: 2px solid #AB9F5F;
@@ -476,10 +476,10 @@ footer p {
   text-decoration: none;
   font-weight: 600;
   font-size: clamp(0.9rem, 0.83rem + 0.27vw, 1rem);
+  cursor: pointer;
 }
 .nav-link a:hover {
-  cursor: pointer;
-  opacity: 60%;
+  border-bottom: 2px solid #282415;
 }
 
 .flex-nav {
@@ -492,26 +492,21 @@ footer p {
   justify-content: space-between;
   align-items: center;
 }
-.nav-header a {
-  color: #000000;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
 
 .nav-toggle {
   border: transparent;
   background: transparent;
   color: #000000;
-  font-size: 1.5rem;
   cursor: pointer;
+  font-size: clamp(1.5rem, 0.6017rem + 1.9915vw, 1.875rem);
 }
 
 .nav-toggle:focus-visible {
-  border: 2px solid #282415;
+  background-color: #AB9F5F;
 }
 
 .nav-toggle:hover {
-  border: 2px solid #282415;
+  transform: rotate(180deg) scale(1);
 }
 
 .nav-links {
@@ -522,7 +517,7 @@ footer p {
 }
 
 .nav-open {
-  height: 25vh;
+  height: 26vh;
   z-index: 10;
   position: absolute;
   width: 100%;
@@ -539,6 +534,9 @@ footer p {
 }
 
 @media (min-width: 640px) {
+  .nav-header {
+    margin-top: 1em;
+  }
   .about-content {
     width: 70%;
   }
@@ -562,8 +560,8 @@ footer p {
   }
   .project-info {
     margin: 0;
-    width: 80%;
-    margin-left: 125px;
+    width: 50%;
+    margin-left: 7em;
   }
   .contact-info {
     width: 70%;
@@ -578,6 +576,9 @@ footer p {
   }
   .nav-header {
     display: block;
+  }
+  .logo {
+    font-size: clamp(1.25rem, 0.6543rem + 2.9787vw, 2rem);
   }
   .flex-nav {
     flex-direction: row;
@@ -603,8 +604,8 @@ footer p {
     border-bottom: none;
   }
   .nav-link span {
-    background-color: #A08F54;
-    padding: 8px 15px;
+    background-color: #CEC7A1;
+    padding: 0.5em 0.9375em;
     border-radius: 4px;
   }
   .about-content {
@@ -631,7 +632,7 @@ footer p {
   .project-info {
     margin: 0;
     width: 80%;
-    margin-left: 125px;
+    margin-left: 7em;
   }
   .contact-info {
     width: 70%;

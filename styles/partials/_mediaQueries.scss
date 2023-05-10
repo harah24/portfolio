@@ -1,6 +1,12 @@
 @use 'variables' as*;
 
 @media (min-width:640px) {
+
+  //Header section 
+
+  .nav-header{
+    margin-top: 1em;
+  }
   
   // About section 
 
@@ -8,7 +14,7 @@
   width: 70%;
  }
 
- // PROJECT STYLING 
+ // Project section
 
   .project1, .project2{
     display: flex;
@@ -33,11 +39,11 @@
 
   .project-info{
     margin: 0;
-    width: 80%;
-    margin-left: 125px;
+    width: 50%;
+    margin-left:7em;
   }
 
- //CONTACT STYLING
+ //Contact section
 
   .contact-info{
     width: 70%;
@@ -47,16 +53,22 @@
   }
 }
 
-
 @media  (min-width:1024px ) {
-  //NAV STYLING
+  
+  //nav section 
 
   .nav-toggle{
     display: none;
   }
+
   .nav-header{
     display: block;
   }
+
+  .logo{
+    font-size: clamp(1.25rem, 0.6543rem + 2.9787vw, 2rem);
+  }
+
   .flex-nav{
     flex-direction: row;
     justify-content: space-between;
@@ -83,8 +95,8 @@
   }
   
   .nav-link span{
-    background-color:#A08F54;
-    padding: 8px 15px;
+    background-color:$sage-clr;
+    padding: 0.5em 0.9375em;
     border-radius: 4px;
   }
 
@@ -120,10 +132,10 @@
   .project-info{
     margin: 0;
     width: 80%;
-    margin-left: 125px;
+    margin-left:7em;
   }
 
-//Contact section
+  //Contact section
 
   .contact-info{
     width: 70%;
