@@ -301,10 +301,7 @@ h3 {
   font-size: clamp(0.9rem, 0.83rem + 0.27vw, 1rem);
 }
 .nav-link a:hover {
-  background-color: #F1EEE4;
-}
-.nav-link a:focus {
-  border: 2px solid #F1EEE4;
+  border: 2px solid #282415;
 }
 
 .flex-nav {
@@ -336,7 +333,7 @@ h3 {
 }
 
 .nav-toggle:hover {
-  background-color: #AB9F5F;
+  border: 2px solid #282415;
 }
 
 .nav-links {
@@ -349,14 +346,10 @@ h3 {
 .nav-open {
   height: 25vh;
   z-index: 10;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 4.0625em;
   left: 0;
-}
-
-.nav-close {
-  top: -50em;
 }
 
 .header-content {
@@ -377,86 +370,6 @@ footer p {
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
-}
-
-.about {
-  margin: 3.125em 0;
-}
-.about .about-content h2 {
-  margin-bottom: 1.25em;
-  text-align: center;
-}
-
-.skills-section {
-  background-color: #282415;
-  color: #F1EEE4;
-  margin: 0;
-  padding: 3.125em 0;
-}
-.skills-section .skills-content h2 {
-  text-align: center;
-  margin-bottom: 2em;
-}
-.skills-section .skills-content ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(95px, auto));
-  grid-gap: 1.5em;
-}
-.skills-section .skills-content ul li {
-  width: 75%;
-  justify-self: center;
-  align-self: center;
-}
-.skills-section .skills-content ul li i {
-  font-size: 1.5rem;
-  margin-bottom: 0.25em;
-}
-
-.projects {
-  padding-top: 3.125em;
-  padding-bottom: 1.125em;
-}
-.projects a {
-  color: #000000;
-}
-.projects h2 {
-  margin-bottom: 1.25em;
-  text-align: center;
-}
-.projects .project-list h3 {
-  text-align: center;
-  margin: 1.25em;
-}
-.projects .project-list p {
-  margin-bottom: 1.25em;
-}
-.projects .project-info {
-  margin: 0 1.25em;
-}
-.projects .project-info .technical-skills {
-  text-align: center;
-  margin-bottom: 1.25em;
-}
-.projects .project-info .technical-skills ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.5em;
-}
-.projects .project-info .project-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.25em;
-  margin-bottom: 2em;
-}
-.projects .project-info .project-links a {
-  text-decoration: none;
-  cursor: pointer;
-}
-.projects .project-info .project-links a:hover {
-  border: 2px solid #AB9F5F;
-}
-.projects .project-info .project-links a:focus-visible {
-  border: 2px solid #AB9F5F;
 }
 
 .contact {
@@ -542,6 +455,86 @@ footer p {
 }
 .contact .form-btn:focus-visible {
   border: 2px solid #282415;
+}
+
+.projects {
+  padding-top: 3.125em;
+  padding-bottom: 1.125em;
+}
+.projects a {
+  color: #000000;
+}
+.projects h2 {
+  margin-bottom: 1.25em;
+  text-align: center;
+}
+.projects .project-list h3 {
+  text-align: center;
+  margin: 1.25em;
+}
+.projects .project-list p {
+  margin-bottom: 1.25em;
+}
+.projects .project-info {
+  margin: 0 1.25em;
+}
+.projects .project-info .technical-skills {
+  text-align: center;
+  margin-bottom: 1.25em;
+}
+.projects .project-info .technical-skills ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+.projects .project-info .project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.25em;
+  margin-bottom: 2em;
+}
+.projects .project-info .project-links a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.projects .project-info .project-links a:hover {
+  border: 2px solid #AB9F5F;
+}
+.projects .project-info .project-links a:focus-visible {
+  border: 2px solid #AB9F5F;
+}
+
+.about {
+  margin: 3.125em 0;
+}
+.about .about-content h2 {
+  margin-bottom: 1.25em;
+  text-align: center;
+}
+
+.skills-section {
+  background-color: #282415;
+  color: #F1EEE4;
+  margin: 0;
+  padding: 3.125em 0;
+}
+.skills-section .skills-content h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.skills-section .skills-content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(95px, auto));
+  grid-gap: 1.5em;
+}
+.skills-section .skills-content ul li {
+  width: 75%;
+  justify-self: center;
+  align-self: center;
+}
+.skills-section .skills-content ul li i {
+  font-size: 1.5rem;
+  margin-bottom: 0.25em;
 }
 
 @media (min-width: 640px) {

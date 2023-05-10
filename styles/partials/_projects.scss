@@ -1,0 +1,50 @@
+@use 'variables' as *; 
+
+.projects{
+  padding-top: 3.125em;
+  padding-bottom: 1.125em;
+  a{
+    color:$black-clr;
+  }
+  h2{
+    margin-bottom: 1.25em;
+    text-align: center;
+  }
+  .project-list{
+    h3{
+      text-align: center;
+      margin:1.25em;
+    }
+    p{
+      margin-bottom: 1.25em;
+    }
+  }
+  .project-info{
+    margin: 0 1.25em;
+    .technical-skills{
+      text-align: center;
+      margin-bottom: 1.25em;
+      ul{
+        display: flex;
+        justify-content: center;
+        gap:1.5em;
+      }
+    }
+    .project-links{
+      display: flex;
+      justify-content: center;
+      gap:1.25em;
+      margin-bottom:2em;
+      a{
+        text-decoration: none;
+        cursor: pointer;
+      }
+      a:hover{
+        border: 2px solid $ecru-clr;
+      }
+      a:focus-visible{
+        border: 2px solid $ecru-clr;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.about{
+  margin: 3.125em 0;
+  .about-content{
+    h2{
+      margin-bottom: 1.25em;
+      text-align: center;
+    }
+  }
+}
+
+

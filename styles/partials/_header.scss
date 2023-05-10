@@ -27,10 +27,7 @@
     font-size: clamp(0.9rem, 0.83rem + 0.27vw, 1rem);
   }
   a:hover{
-    background-color:$white-clr;
-  }
-  a:focus{
-    border: 2px solid $white-clr;
+    border: 2px solid $eerie-black-clr;   
   }
 }
 
@@ -63,7 +60,7 @@
 }
 
 .nav-toggle:hover{
-  background-color: $ecru-clr;
+  border: 2px solid $eerie-black-clr;
 }
 
 .nav-links {
@@ -76,16 +73,11 @@
 .nav-open{
   height: 25vh;
   z-index: 10;
-  position: fixed;
+  position:absolute;
   width: 100%;
   top:4.0625em;
   left: 0;
 }
-
-.nav-close{
-  top:-50em;
-}
-
 
 .header-content{
   margin-top: 4em;
