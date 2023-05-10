@@ -227,6 +227,7 @@ html {
 html {
   font-size: 125%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -260,7 +261,7 @@ h1, .logo {
   font-size: clamp(1.25rem, 0.6543rem + 2.9787vw, 3rem);
 }
 
-h2 {
+h2, .to-top {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: clamp(1.25rem, 1.0372rem + 1.0638vw, 1.875rem);
@@ -279,7 +280,7 @@ footer {
 }
 footer p {
   margin: 0;
-  padding: 15px 0;
+  padding: 0.75em 0;
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
@@ -368,6 +369,19 @@ footer p {
 }
 .contact .form-btn:focus-visible {
   border: 2px solid #282415;
+}
+
+.to-top {
+  position: fixed;
+  background-color: #CEC7A1;
+  color: #282415;
+  width: 1.5em;
+  height: 1.5em;
+  bottom: 1em;
+  right: 0.5em;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 .projects {
