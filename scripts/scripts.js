@@ -1,5 +1,5 @@
 
-// NAV SECTION 
+// Js for the hamburger menu 
 
 // define variables that target the hamburger menu and links
 
@@ -22,9 +22,7 @@ document.querySelectorAll("#nav-link").forEach(link => link.addEventListener("cl
 
 
 
-
-// CONTACT FORM 
-
+// Js for contact form
 // Credit to formspree.io for the page reset code. 
 
 window.onbeforeunload = () => {

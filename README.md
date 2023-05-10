@@ -1,6 +1,6 @@
 # Portfolio project
 Portfolio website to showcase projects & technical skills. 
-#### 👩‍💻 Portfolio website created with:
+#### 👩🏾‍💻 Portfolio website created with:
 * HTML
 * CSS
 * JavaScript 
