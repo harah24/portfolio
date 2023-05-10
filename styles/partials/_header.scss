@@ -27,7 +27,8 @@
     font-size: clamp(0.9rem, 0.83rem + 0.27vw, 1rem);
   }
   a:hover{
-    border: 2px solid $eerie-black-clr;   
+    cursor: pointer;
+    opacity: 60%;
   }
 }
 
@@ -66,7 +67,7 @@
 .nav-links {
   height: 0;
   overflow: hidden;
-  background-color:$khaki-clr;
+  background-color:$timberwolf-clr;
   text-align: center;
 }
 

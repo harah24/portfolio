@@ -1,5 +1,5 @@
 # Portfolio project
-A front-end developer portfolio website. 
+Portfolio website to showcase projects & technical skills. 
 #### 👩‍💻 Portfolio website created with:
 * HTML
 * CSS
