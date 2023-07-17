@@ -25,13 +25,6 @@
     justify-content: space-between;
   }
 
-  .project4 {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 2em;
-  }
-
   .project-img {
     width: 60%;
     display: flex;
@@ -111,19 +104,13 @@
   // Project section
 
   .project2,
-  .project3 {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 2em;
-    justify-content: space-between;
-  }
-
+  .project3,
   .project4 {
     display: flex;
     margin: 0;
     padding: 0;
     margin-bottom: 2em;
+    justify-content: space-between;
   }
 
   .project-img {
