@@ -1,22 +1,23 @@
-@use 'variables' as*;
+@use "variables" as *;
 
-@media (min-width:640px) {
+@media (min-width: 640px) {
+  //Header section
 
-  //Header section 
-
-  .nav-header{
+  .nav-header {
     margin-top: 1em;
   }
-  
-  // About section 
 
- .about-content{
-  width: 70%;
- }
+  // About section
 
- // Project section
+  .about-content {
+    width: 70%;
+  }
 
-  .project1, .project2{
+  // Project section
+
+  .project2,
+  .project3,
+  .project4 {
     display: flex;
     margin: 0;
     padding: 0;
@@ -24,93 +25,93 @@
     justify-content: space-between;
   }
 
-  .project3{
+  .project4 {
     display: flex;
     margin: 0;
     padding: 0;
     margin-bottom: 2em;
   }
 
-  .project-img{
-    width:60%;
+  .project-img {
+    width: 60%;
     display: flex;
     align-items: center;
   }
 
-  .project-info{
+  .project-info {
     margin: 0;
     width: 50%;
-    margin-left:7em;
+    margin-left: 7em;
   }
 
- //Contact section
+  //Contact section
 
-  .contact-info{
+  .contact-info {
     width: 70%;
-    h2{
+    h2 {
       margin-bottom: 1.125em;
     }
   }
 }
 
-@media  (min-width:1024px ) {
-  
-  //nav section 
+@media (min-width: 1024px) {
+  //nav section
 
-  .nav-toggle{
+  .nav-toggle {
     display: none;
   }
 
-  .nav-header{
+  .nav-header {
     display: block;
   }
 
-  .logo{
+  .logo {
     font-size: clamp(1.25rem, 0.6543rem + 2.9787vw, 2rem);
   }
 
-  .flex-nav{
+  .flex-nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 2.5em;
   }
 
-  .nav-links{
+  .nav-links {
     height: auto;
-    background-color:transparent;
+    background-color: transparent;
     li {
-      margin-right:1.5em;
+      margin-right: 1.5em;
       margin-left: 1.5em;
     }
   }
 
-  ul{
+  ul {
     text-align: center;
     justify-content: space-between;
     text-decoration: none;
   }
 
-  .nav-link{
+  .nav-link {
     display: inline-block;
     border-bottom: none;
   }
-  
-  .nav-link span{
-    background-color:$sage-clr;
+
+  .nav-link span {
+    background-color: $sage-clr;
     padding: 0.5em 0.9375em;
     border-radius: 4px;
   }
 
- // About section 
+  // About section
 
- .about-content{
-  width: 70%;
- }
+  .about-content {
+    width: 70%;
+  }
 
   // Project section
 
-  .project1, .project2{
+  .project2,
+  .project3 {
     display: flex;
     margin: 0;
     padding: 0;
@@ -118,34 +119,31 @@
     justify-content: space-between;
   }
 
-  .project3{
+  .project4 {
     display: flex;
     margin: 0;
     padding: 0;
     margin-bottom: 2em;
   }
 
-  .project-img{
+  .project-img {
     width: 60%;
     display: flex;
     align-items: center;
   }
 
-  .project-info{
+  .project-info {
     margin: 0;
     width: 80%;
-    margin-left:7em;
+    margin-left: 7em;
   }
 
   //Contact section
 
-  .contact-info{
+  .contact-info {
     width: 70%;
-    h2{
+    h2 {
       margin-bottom: 1.125em;
     }
   }
 }
-
-
-
